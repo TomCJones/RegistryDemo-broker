@@ -583,6 +583,6 @@ Container started successfully.
 docker run -dt -v "C:\Users\rp_to\source\repos\RegistryDemo\RegistryDemo:/app" -v "C:\Users\rp_to\source\repos\RegistryDemo:/src/" -v "C:\Users\rp_to\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro" -v "C:\Users\rp_to\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro" -v "C:\Users\rp_to\.nuget\packages\:/root/.nuget/fallbackpackages2" -v "C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages" -e "DOTNET_USE_POLLING_FILE_WATCHER=1" -e "ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true" -e "ASPNETCORE_ENVIRONMENT=Development" -e "ASPNETCORE_URLS=https://+:443;http://+:80" -e "NUGET_PACKAGES=/root/.nuget/fallbackpackages2" -e "NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2" -P --name RegistryDemo_1 --entrypoint tail registrydemo:dev -f /dev/null 
 
 
+docker run -dt  -v "C:\Users\rp_to\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro" -v "C:\Users\rp_to\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro" -v "C:\Users\rp_to\.nuget\packages\:/root/.nuget/fallbackpackages2" -v "C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages" -e "DOTNET_USE_POLLING_FILE_WATCHER=1" -e "ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true" -e "ASPNETCORE_ENVIRONMENT=Development" -e "ASPNETCORE_URLS=https://+:443;http://+:80" -e "NUGET_PACKAGES=/root/.nuget/fallbackpackages2" -e "NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2" -P --name RegistryDemo_1 --entrypoint tail registrydemo:dev -f /dev/null 
 
 
-v
