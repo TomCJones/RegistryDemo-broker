@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  registrytest:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /ASP.NET/Https:/ASP.NET/Https

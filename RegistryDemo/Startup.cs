@@ -28,6 +28,7 @@ namespace RegistryDemo
         {
 
             services.AddControllers();
+            services.AddRazorPages();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RegistryDemo", Version = "v1" });
@@ -52,7 +53,15 @@ namespace RegistryDemo
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                      name: "areas",
+                      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "registryquery",
+                    pattern: "{controller=RegistryTest}/{action=Index}/{id?}");
             });
         }
     }
