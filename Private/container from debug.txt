@@ -1,0 +1,296 @@
+    {
+        "Id": "f4072d85e04ad61f9517fcd8b6a4dc2bc10a3510559a0d642adae739da33f9ed",
+        "Created": "2020-12-24T00:20:15.6158926Z",
+        "Path": "tail",
+        "Args": [
+            "-f",
+            "/dev/null"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1625,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2020-12-24T00:20:15.887009Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:f73be0c0c3c9ab43e5d396da14bfe4d011929175941595985f54dc57f59bbe54",
+        "ResolvConfPath": "/var/lib/docker/containers/f4072d85e04ad61f9517fcd8b6a4dc2bc10a3510559a0d642adae739da33f9ed/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/f4072d85e04ad61f9517fcd8b6a4dc2bc10a3510559a0d642adae739da33f9ed/hostname",
+        "HostsPath": "/var/lib/docker/containers/f4072d85e04ad61f9517fcd8b6a4dc2bc10a3510559a0d642adae739da33f9ed/hosts",
+        "LogPath": "/var/lib/docker/containers/f4072d85e04ad61f9517fcd8b6a4dc2bc10a3510559a0d642adae739da33f9ed/f4072d85e04ad61f9517fcd8b6a4dc2bc10a3510559a0d642adae739da33f9ed-json.log",
+        "Name": "/RegistryDemo_2",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": [
+            "6fc036943f1ccb7980350420694d75ad8235165506955cc913b20e69307514b0"
+        ],
+        "HostConfig": {
+            "Binds": [
+                "C:\\Users\\rp_to\\AppData\\Roaming\\Microsoft\\UserSecrets:/root/.microsoft/usersecrets:ro",
+                "C:\\Users\\rp_to\\AppData\\Roaming\\ASP.NET\\Https:/root/.aspnet/https:ro",
+                "C:\\Users\\rp_to\\.nuget\\packages\\:/root/.nuget/fallbackpackages2",
+                "C:\\Microsoft\\Xamarin\\NuGet\\:/root/.nuget/fallbackpackages",
+                "C:\\Users\\rp_to\\vsdbg\\vs2017u5:/remote_debugger:rw",
+                "C:\\Users\\rp_to\\source\\repos\\RegistryDemo\\RegistryDemo:/app",
+                "C:\\Users\\rp_to\\source\\repos\\RegistryDemo:/src/"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Capabilities": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": true,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/cf63baee3f04f9c4145f184da237f75407eddf95409803c9c5af33fa48737a13-init/diff:/var/lib/docker/overlay2/wj9ydzq85uppbv3pvau9i32dk/diff:/var/lib/docker/overlay2/723efe23165f169cf5164d58c63df92417f94ab45e6554c06ed98651c46d4fea/diff:/var/lib/docker/overlay2/0fdc1c6666f5cf4d457dcac5a81d3ca4d55d58d405fb775acc88c7fd7b56438c/diff:/var/lib/docker/overlay2/3d4f653156db154581b0329144e7d6712e1680c5ad89b97a8526cbb76e168232/diff:/var/lib/docker/overlay2/5be40d686ea3b611293e6ffa5e7f683821d5f45160272c1863749e59b81eb589/diff:/var/lib/docker/overlay2/1baa6d8f2dea4ca5ccdfe86ecbccef6d405ee76b9e2030130739382aad9b935c/diff",
+                "MergedDir": "/var/lib/docker/overlay2/cf63baee3f04f9c4145f184da237f75407eddf95409803c9c5af33fa48737a13/merged",
+                "UpperDir": "/var/lib/docker/overlay2/cf63baee3f04f9c4145f184da237f75407eddf95409803c9c5af33fa48737a13/diff",
+                "WorkDir": "/var/lib/docker/overlay2/cf63baee3f04f9c4145f184da237f75407eddf95409803c9c5af33fa48737a13/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "C:\\Users\\rp_to\\source\\repos\\RegistryDemo\\RegistryDemo",
+                "Destination": "/app",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/run/desktop/mnt/host/c/Users/rp_to/source/repos/RegistryDemo",
+                "Destination": "/src",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "C:\\Users\\rp_to\\AppData\\Roaming\\Microsoft\\UserSecrets",
+                "Destination": "/root/.microsoft/usersecrets",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "C:\\Users\\rp_to\\AppData\\Roaming\\ASP.NET\\Https",
+                "Destination": "/root/.aspnet/https",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "C:\\Users\\rp_to\\.nuget\\packages\\",
+                "Destination": "/root/.nuget/fallbackpackages2",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "C:\\Microsoft\\Xamarin\\NuGet\\",
+                "Destination": "/root/.nuget/fallbackpackages",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "C:\\Users\\rp_to\\vsdbg\\vs2017u5",
+                "Destination": "/remote_debugger",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "f4072d85e04a",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "443/tcp": {},
+                "80/tcp": {}
+            },
+            "Tty": true,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "DOTNET_USE_POLLING_FILE_WATCHER=1",
+                "ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true",
+                "ASPNETCORE_ENVIRONMENT=Development",
+                "ASPNETCORE_URLS=https://+:443;http://+:80",
+                "NUGET_PACKAGES=/root/.nuget/fallbackpackages2",
+                "NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DOTNET_RUNNING_IN_CONTAINER=true",
+                "DOTNET_VERSION=5.0.1",
+                "ASPNET_VERSION=5.0.1"
+            ],
+            "Cmd": [
+                "-f",
+                "/dev/null"
+            ],
+            "Image": "registrydemo:dev",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "tail"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.microsoft.created-by": "visual-studio",
+                "com.microsoft.visual-studio.project-name": "RegistryDemo"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "c4dd984aa6761b845cae5be3e3a77a580ff7f332803bab360a4132a030f9787e",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "443/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "49161"
+                    }
+                ],
+                "80/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "49162"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/c4dd984aa676",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "8821178e474c4785cee7a9d6ecd604c81b381611a197437fed29a7f5d319d917",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "787d8387d7f38e28d8b2495804464e5f94b11722a52a864a2ce5cfb9ae37fdcb",
+                    "EndpointID": "8821178e474c4785cee7a9d6ecd604c81b381611a197437fed29a7f5d319d917",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
