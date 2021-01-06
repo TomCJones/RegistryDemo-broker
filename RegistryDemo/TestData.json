@@ -1,0 +1,26 @@
+[
+{
+    "name": "us.trustworthy.agent",
+    "version": "1",
+    "platform": "Android",
+    "min_platform": "23",
+    "source": null,
+    "jurisdiction": "us-wa",
+    "user_authn": null,
+    "date": 1576358115,
+    "url": "https://trustregistry.us/csp",
+    "trust_registry": "US Healthcare Assurance Framework"
+  },
+{
+    "name": "com.example.wallet",
+    "version": "1",
+    "platform": "Android",
+    "min_platform": "23",
+    "source": null,
+    "jurisdiction": "us-wa",
+    "user_authn": null,
+    "date": 1576366625,
+    "url": "https://example.com/csp",
+    "trust_registry": "Open Banking"
+  }
+]
