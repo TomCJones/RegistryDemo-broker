@@ -10,6 +10,9 @@ namespace RegistryDemo.Models
     { 
         public SqliteDBContext (DbContextOptions<SqliteDBContext> options)  : base(options)
         {
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
             Database.EnsureCreated();
             Database.Migrate();
             if (this.RegisteredObjects.Any())

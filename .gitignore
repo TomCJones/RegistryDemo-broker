@@ -9,6 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+**/[Pp]rivate/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -85,7 +86,6 @@ StyleCopReport.xml
 *.vssscc
 .builds
 *.pidb
-*.Private
 *.svclog
 *.scc
 

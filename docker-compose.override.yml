@@ -5,10 +5,9 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
-      - ASPNETCORE_Kestrel__Certificates__Default__Password=Kantara2
-      - ASPNETCORE_Kestrel__Certificates__Default__Path=/ASP.NET/Https/localhost.pfx
     ports:
       - "80"
       - "443"
     volumes:
-      - /ASP.NET/Https:/ASP.NET/Https
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

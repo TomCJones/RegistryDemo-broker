@@ -31,7 +31,7 @@ namespace RegistryDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SqliteDBContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("Default")));
+                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
         //    services.AddDbContext<SqliteDBContext>(Configuration.GetConnectionString("Default"));    //            AddEntityFrameworkSqlite(Configuration.GetConnectionString(""));
             services.AddControllers();
             services.AddRazorPages();

@@ -1,16 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using RegistryDemo.Models;
 
 namespace RegistryDemo.Controllers
 {
+
     [ApiController]
     [Route("[controller]")]
     public class RegistryQueryController : ControllerBase
     {
+        private DbContext _dbContext;
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -18,9 +22,10 @@ namespace RegistryDemo.Controllers
 
         private readonly ILogger<RegistryQueryController> _logger;
 
-        public RegistryQueryController(ILogger<RegistryQueryController> logger)
+        public RegistryQueryController(ILogger<RegistryQueryController> logger, RegistryDemo.Models.SqliteDBContext context)
         {
             _logger = logger;
+            _dbContext = context;
         }
 
         [HttpGet]
