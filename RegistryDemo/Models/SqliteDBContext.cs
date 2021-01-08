@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 namespace RegistryDemo.Models
@@ -11,17 +12,13 @@ namespace RegistryDemo.Models
         public SqliteDBContext (DbContextOptions<SqliteDBContext> options)  : base(options)
         {
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            Database.EnsureCreated();
-            Database.Migrate();
-            if (this.RegisteredObjects.Any())
-            {
-                return;
-            }
-        }
 
-        string _dbPath;
         public DbSet<RegisteredObject> RegisteredObjects { get; set; }
+
+        public async Task<IEnumerable<RegisteredObject>> GetObjectsAsync()
+        {
+            var items = await RegisteredObjects.ToListAsync().ConfigureAwait(false);
+            return items;
+        }
     }
 }

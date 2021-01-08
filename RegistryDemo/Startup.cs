@@ -30,8 +30,11 @@ namespace RegistryDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string dbPath = Configuration.GetConnectionString("DefaultConnection");
+            Console.WriteLine();
+            Console.WriteLine("dbPath = " + dbPath);
             services.AddDbContext<SqliteDBContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlite(dbPath));
         //    services.AddDbContext<SqliteDBContext>(Configuration.GetConnectionString("Default"));    //            AddEntityFrameworkSqlite(Configuration.GetConnectionString(""));
             services.AddControllers();
             services.AddRazorPages();
