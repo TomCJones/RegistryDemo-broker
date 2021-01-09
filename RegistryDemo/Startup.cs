@@ -54,7 +54,7 @@ namespace RegistryDemo
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "RegistryDemo v1"));
             }
 
-            //      app.UseHttpsRedirection();   // TODO resort this when https is working well.
+           app.UseHttpsRedirection();   // use this when https is working well.
 
             string dirPath = _env.ContentRootPath;
             var fileProvider = _env.ContentRootFileProvider;
